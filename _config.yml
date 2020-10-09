@@ -1,1 +1,10 @@
-theme: jekyll-theme-minimal
+remote_theme: thelehhman/texture
+texture:
+  title: Kush Parmar
+  tagline: Full Stack Developer
+
+  style: purple
+
+  social_links:
+    github: igneel73
+    linkedIn: in/kush-parmar
