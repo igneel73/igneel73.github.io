@@ -7,7 +7,7 @@ body {
 .landing {
   height: 100vh;
   width: 100vw;
-  background-color: #c19ab7;
+  background-color: #deefb7;
   color: #170a1c;
   display: flex;
   align-items: left;
@@ -19,6 +19,10 @@ body {
   display: inline-block;
   padding-left: 12vw;
   font-size: 7rem;
+}
+
+.landing__title--first {
+  font-weight: 700;
 }
 
 .landing__subtitle {
@@ -33,12 +37,12 @@ body {
 .intro {
   height: 100vh;
   width: 100vw;
-  background-color: #c19ab7;
+  background-color: #98dfaf;
   color: #170a1c;
 }
 
 .exp {
-  background-color: #c19ab7;
+  background-color: #deefb7;
   display: flex;
   flex-direction: column;
 }
