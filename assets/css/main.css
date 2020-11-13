@@ -17,8 +17,9 @@ body {
 
 .landing__title {
   display: inline-block;
-  padding-left: 12vw;
+  padding-right: 12vw;
   font-size: 7rem;
+  text-align: end;
 }
 
 .landing__title--first {
@@ -26,12 +27,13 @@ body {
 }
 
 .landing__subtitle {
+  padding-right: 12vw;
   display: inline-block;
   margin-top: 2vh;
   margin-left: 0.22rem;
   font-size: 3rem;
-  padding-left: 12vw;
   color: #170a1c;
+  text-align: end;
 }
 
 .intro {
@@ -51,8 +53,8 @@ body {
   padding-top: 4vh;
   margin: 0;
   display: inline-block;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 600;
   align-self: center;
 }
 
@@ -89,6 +91,19 @@ body {
 
 .exp__title {
   font-size: 2.2rem;
+  text-align: end;
+}
+
+.exp__role {
+  text-align: end;
+}
+
+.exp__time {
+  text-align: end;
+}
+
+.left {
+  text-align: left;
 }
 
 .exp__info {
