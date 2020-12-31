@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #3c2c2c;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  padding: 0 10vw;
+}
+
+.nav {
+  padding: 8vh 0;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  align-content: center;
+}
+
+.nav__list li {
+  font-size: 1.25rem;
+  margin-right: 1.75rem;
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 20vw 20vw 5vw 5vw 10vw;
+  grid-template-rows: 6vh 6vh 16vh 12vh 16vh 28vh;
+}
+
+.landing__hero {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+}
+
+.landing__img {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.landing__scroll-button {
+  grid-column-start: 3;
+  grid-row-start: 6;
+}
+
+.landing__decor {
+  margin-left: -10vw;
+  grid-row-start: 5;
+}
