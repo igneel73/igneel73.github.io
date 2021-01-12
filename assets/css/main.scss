@@ -30,8 +30,6 @@ body {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-column-gap: 0.5rem;
   width: 100vw;
-  min-height: 100vh;
-  max-height: 100vh;
   position: relative;
 }
 
