@@ -18,7 +18,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-column-gap: 0.5rem;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -132,6 +132,10 @@ body {
   margin-top: 2.66rem;
   grid-column-start: 4;
   grid-column-end: 10;
+  margin: auto;
+
+  max-width: 100% !important;
+  height: auto;
 }
 
 .landing {
@@ -140,10 +144,13 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 100%;
+  width: fit-content;
+  margin: auto;
 
   &__img {
-    width: 295px;
-    height: 166px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
   }
@@ -173,54 +180,10 @@ body {
   grid-column-start: 1;
 }
 
+// medium screens
+@media only screen and (min-width: 768px) {
+}
+
 // large screens
 @media only screen and (min-width: 992px) {
-  .body {
-    padding: 0 10vw;
-  }
-
-  .nav {
-    padding: 8vh 0;
-    display: flex;
-    width: 80vw;
-    justify-content: space-between;
-
-    &__list {
-      display: flex;
-      list-style: none;
-      align-content: center;
-
-      li {
-        font-size: 1.25rem;
-        margin-right: 1.75rem;
-      }
-    }
-  }
-
-  .landing {
-    display: grid;
-    grid-template-columns: 20vw 20vw 5vw 5vw 10vw;
-    grid-template-rows: 6vh 6vh 16vh 12vh 16vh 28vh;
-
-    &__hero {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 3;
-    }
-
-    &__img {
-      grid-column-start: 4;
-      grid-row-start: 2;
-    }
-
-    &__scroll-button {
-      grid-column-start: 3;
-      grid-row-start: 6;
-    }
-
-    &__decor {
-      margin-left: -10vw;
-      grid-row-start: 5;
-    }
-  }
 }

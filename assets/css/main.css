@@ -20,7 +20,7 @@ body {
   -ms-grid-columns: (minmax(0, 1fr))[12];
       grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-column-gap: 0.5rem;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -159,6 +159,9 @@ body {
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 10;
+  margin: auto;
+  max-width: 100% !important;
+  height: auto;
 }
 
 .landing {
@@ -175,11 +178,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 .landing__img {
-  width: 295px;
-  height: 166px;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
 }
@@ -212,65 +220,5 @@ body {
 .decor {
   -ms-grid-column: 1;
       grid-column-start: 1;
-}
-
-@media only screen and (min-width: 992px) {
-  .body {
-    padding: 0 10vw;
-  }
-  .nav {
-    padding: 8vh 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80vw;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  .nav__list li {
-    font-size: 1.25rem;
-    margin-right: 1.75rem;
-  }
-  .landing {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 20vw 20vw 5vw 5vw 10vw;
-        grid-template-columns: 20vw 20vw 5vw 5vw 10vw;
-    -ms-grid-rows: 6vh 6vh 16vh 12vh 16vh 28vh;
-        grid-template-rows: 6vh 6vh 16vh 12vh 16vh 28vh;
-  }
-  .landing__hero {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 2;
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-  }
-  .landing__img {
-    -ms-grid-column: 4;
-        grid-column-start: 4;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-  }
-  .landing__scroll-button {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    -ms-grid-row: 6;
-        grid-row-start: 6;
-  }
-  .landing__decor {
-    margin-left: -10vw;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-  }
 }
 /*# sourceMappingURL=main.css.map */
