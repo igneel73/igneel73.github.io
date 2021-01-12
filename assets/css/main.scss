@@ -32,6 +32,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   max-height: 100vh;
+  position: relative;
 }
 
 // landing + nav
@@ -281,30 +282,13 @@ img.no-title {
   position: absolute;
   z-index: -1;
   border-radius: 5% 5% 0 0;
+  bottom: 0;
 
   &--org {
     background-color: #fd9583;
   }
   &--green {
     background-color: #66ada8;
-  }
-  &--1 {
-    bottom: -100vh;
-  }
-  &--2 {
-    bottom: -200vh;
-  }
-  &--3 {
-    bottom: -300vh;
-  }
-  &--4 {
-    bottom: -400vh;
-  }
-  &--5 {
-    bottom: -500vh;
-  }
-  &--6 {
-    bottom: -600vh;
   }
 }
 

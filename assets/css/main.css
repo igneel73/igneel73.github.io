@@ -32,6 +32,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   max-height: 100vh;
+  position: relative;
 }
 
 .nav {
@@ -335,6 +336,7 @@ img.no-title {
   position: absolute;
   z-index: -1;
   border-radius: 5% 5% 0 0;
+  bottom: 0;
 }
 
 .background-frame--org {
@@ -343,30 +345,6 @@ img.no-title {
 
 .background-frame--green {
   background-color: #66ada8;
-}
-
-.background-frame--1 {
-  bottom: -100vh;
-}
-
-.background-frame--2 {
-  bottom: -200vh;
-}
-
-.background-frame--3 {
-  bottom: -300vh;
-}
-
-.background-frame--4 {
-  bottom: -400vh;
-}
-
-.background-frame--5 {
-  bottom: -500vh;
-}
-
-.background-frame--6 {
-  bottom: -600vh;
 }
 
 footer {
