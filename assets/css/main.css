@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 .font-green {
@@ -171,6 +170,7 @@ body {
   grid-column-end: 10;
   margin: auto;
   margin-top: 2.66rem;
+  width: 80%;
   max-width: 100% !important;
   height: auto;
 }
@@ -198,9 +198,9 @@ body {
 
 .landing__img {
   max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem auto 1rem auto;
 }
 
 .landing__hero {
@@ -208,7 +208,8 @@ body {
 }
 
 .landing__hero--center {
-  margin: 1.5rem 0;
+  width: 80%;
+  margin: 1.5rem auto;
 }
 
 .scroll {
@@ -219,6 +220,8 @@ body {
   grid-column-end: 8;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  width: 28px;
+  height: 28px;
 }
 
 .scroll:hover {
@@ -231,6 +234,9 @@ body {
 .decor {
   -ms-grid-column: 1;
       grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  height: auto;
 }
 
 h3 {
@@ -424,5 +430,72 @@ footer .nav li a {
 
 footer .nav li a:hover {
   color: #fd9583;
+}
+
+@media only screen and (min-width: 700px) {
+  .mob-logo {
+    margin: 3.825rem auto 0 auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .ham {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 10;
+    margin: 0 auto 2rem auto;
+  }
+  .nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav__list li {
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
+  }
+  .nav__list li a {
+    color: #3c2c2c;
+  }
+  .landing {
+    width: 100%;
+    margin: 0;
+  }
+  .landing__img {
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  .landing__hero {
+    display: none;
+  }
+  .landing__hero--center {
+    margin: 3rem auto 0 auto;
+    width: 70%;
+  }
+  .decor {
+    width: 80%;
+    height: auto;
+  }
+  .scroll {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
