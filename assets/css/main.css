@@ -433,6 +433,11 @@ footer .nav li a:hover {
 }
 
 @media only screen and (min-width: 700px) {
+  .grid-wrapper {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
   .mob-logo {
     margin: 3.825rem auto 0 auto;
     height: -webkit-fit-content;

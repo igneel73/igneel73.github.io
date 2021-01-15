@@ -359,6 +359,9 @@ footer {
 
 // medium screens
 @media only screen and (min-width: 700px) {
+  .grid-wrapper {
+    min-height: fit-content;
+  }
   .mob-logo {
     margin: 3.825rem auto 0 auto;
     height: fit-content;
